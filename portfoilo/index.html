@@ -14,19 +14,21 @@
   <div class="portfolio">
     <!-- intro -->
     <section class="portfolio__section portfolio__section--intro">
-      <!-- portfolio -->
-      <h2 class="portfolio__tit"></h2>
-      <!-- 주니어 개발자 유예나 -->
-      <span class="portfolio__master"></span>
-      <div class="portfolio__cont">
+      <div class="portfolio__titcont">
+        <div class="portfolio__titbox">
+          <h2 class="portfolio__tit"></h2>
+          <span class="portfolio__master"></span>
+        </div>
         <div class="portfolio__flipbox">
           <div class="portfolio__filp">
             <!-- hover시 none -->
-            <div class="portfolio__emoji"></div>
-            <!-- hover시 block -->
             <div class="portfolio__picture"></div>
+            <!-- hover시 block -->
+            <div class="portfolio__emoji"></div>
           </div>
         </div>
+      </div>
+      <div class="portfolio__cont">
         <span class="portfolio__linktit">아래 이미지를 클릭하시면 페이지로 이동합니다</span>
         <div class="portfolio__linkcont">
           <div class="portfolio__link">
@@ -200,25 +202,27 @@
       <div class="portfolio__cont">
         <div class="portfolio__informbox">
           <div class="portfolio__inform">
-            <div class="portfolio__contacticon portfolio__contacticon--phone">
+            <button class="portfolio__contacticon portfolio__contacticon--phone">
               <img src="./image/icon_phone.png" alt="phone 아이콘" />
               <span class="hide">연락처</span>
-            </div>
-            <div class="portfolio__numbox">
+            </button>
+            <span class="portfolio__num">010-5199-0558</span>
+            <!-- <div class="portfolio__numbox">
               <span class="portfolio__num">010-5199-0558</span>
-            </div>
+            </div> -->
           </div>
           <div class="portfolio__inform">
-            <a href="mailto:dbdpsk8871@naver.com">
-              <div class="portfolio__contacticon">
-                <img src="./image/icon_mail.svg" alt="mail 아이콘" />
-              </div>
+            <button class="portfolio__contacticon portfolio__contacticon--mail">
+              <img src="./image/icon_mail.svg" alt="mail 아이콘" />
+            </button>
+            <a href="mailto:dbdpsk8871@naver.com" class="portfolio__mailto" >
+              <span class="portfolio__send">메일 보내기</span>
             </a>
-            <span class="hide">이메일</span>
           </div>
         </div>
       </div>
     </section>
+  </div>
   <!-- script -->
   <script src="main.js"></script>
 </body>

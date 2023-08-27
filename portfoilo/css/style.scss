@@ -9,33 +9,45 @@
   color: #fff;
   padding-bottom: 0.625rem;
   &__section {
-    height: 100vh;
-    padding: 3rem 2rem 
+    height: calc(100vh - 6rem);
+    padding: 3rem 2rem;
+  }
+  &__section--intro {
+    #{$this}__cont {
+      margin-top: 7rem;
+    }
   }
   &__cont {
-    height: 100%;
+    position: absolute;
     border-radius: 1.875rem;
     opacity: 0;
     transition: all 3s;
   }
-
   // intro page 
-  &__master {
-    margin-bottom: 1.875rem;
-    font-weight: 600;
-    font-size: 1.5625rem; 
-    vertical-align: middle;
-    padding-right: 0.25rem;
-    border-right: .05em solid transparent;
-    animation: cursor 0.5s infinite;
+  &__titcont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   &__tit {
     display: block;
-    font-size : 6.25rem;
+    font-size : 11rem;
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+  &__master {
+    font-weight: 600;
+    font-size: 4rem; 
+    vertical-align: middle;
+    padding: 0 0.25rem 0 1rem;
+    border-right: .05em solid transparent;
+    animation: cursor 0.5s infinite;
+    animation-delay: 2s;
   }
   &__flipbox {
-    width: 12.5rem;
-    height: 12.5rem;
+    width: 18rem;
+    height: 18rem;
     perspective: 16.25rem;
   }
   &__filp {
@@ -47,13 +59,12 @@
   }
   // card front
   &__emoji {
-    padding: 1.25rem;
+    transform: rotateY(180deg);
     background: url(../image/icon_dog_computer.svg) center / 70% no-repeat;
   }
   // card back
   &__picture {
     background: url(../image/photo_yena.png) center / cover no-repeat;
-    transform: rotateY(180deg);
   }
   
   &__emoji, &__picture {
@@ -69,7 +80,7 @@
   }
   &__linktit {
     display: block;
-    margin: 6.6rem 0 0.625rem;
+    margin-bottom: 0.625rem;
     color: #c9c7c7;
   }
   &__linkcont {
@@ -108,10 +119,13 @@
   }
 
   // skill page
+  .page2 {
+    width: 100%;
+  }
   &__skilltit {
     display: block;
-    font-size: 1.25rem;
-    margin-bottom: 1.25rem;
+    font-size: 2rem;
+    margin-bottom: 3rem;
   }
   &__skilldesc {
     display: flex;
@@ -119,11 +133,12 @@
     gap: 10rem;
   }
   &__skillbox {
-
+    min-width: 25rem;
+    text-align: center;
   }
   &__language {
-    width: 3.125rem;
-    height: 3.125rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
@@ -133,18 +148,23 @@
       object-fit: contain;
     }
   }
+  &__language:hover {
+    img {
+      animation: vibration 0.3s ease-in-out;
+    }
+  }
   &__language +  &__language {
-    margin-top: 0.625rem;
+    margin-top: 1.5rem;
   }
   &__arrow {
     width: 2.5rem;
     height: 2.5rem;
-    margin: 10rem auto 0;
+    margin: 6rem auto 0;
   }
   &__down {
     width: 100%;
     height: 100%;
-    animation: bounce 1s infinite;
+    animation: bounce 1s linear;
   }
 
   // career page
@@ -160,7 +180,7 @@
     color: #333;
     margin-top: 2.5rem;
     border-radius: 1rem;
-    padding: 1.875rem 0.625rem;
+    padding: 1.875rem 1rem;
   }
   &__project + &___project {
     margin-top: 1.875rem;
@@ -200,7 +220,9 @@
 
 
   // contact page
+  &__informbox {
 
+  }
   &__inform {
     display: flex;
     align-items: center;
@@ -219,26 +241,46 @@
       object-fit: contain;
     }
   }
-  &__contacticon--phone {
-    transform-origin: 0% 0%;
+  &__num {
+    display: none;
   }
-  &__numbox {
-    transform: rotateX(-90deg);
-    transform-origin: 100% 100%;
+  &__mailto {
+    display: none;
   }
-  &__contacticon--phone:hover {
-    transform: rotateX(90deg); animation: numAni 0.5s linear 1;
-  }
+  // &__contacticon--phone {
+  //   transform-origin: 0% 0%;
+  // }
+  // &__numbox {
+  //   transform: rotateX(-90deg);
+  //   transform-origin: 100% 100%;
+  // }
+  // &__contacticon--phone:hover {
+  //   transform: rotateX(90deg); animation: numAni 0.5s linear 1;
+  // }
 
-  &__contacticon--phone:hover + &__numbox {
-    transform: rotateX(0deg); animation: numAni2 0.8s linear 1;
-  }
+  // &__contacticon--phone:hover + &__numbox {
+  //   transform: rotateX(0deg); animation: numAni2 0.8s linear 1;
+  // }
   
   // animation 
   @keyframes cursor {
     0% { border-color: #000; }
     100% { border-color: #fff; }
   }
+
+  @keyframes vibration {
+    0% {
+      transform: rotate(4deg);
+    }
+    50% {
+      transform: rotate(-4deg);
+    }
+    100% {
+      transform: rotate(0deg);
+      animation-timing-function: cubic-bezier(1, 0, 0.6, 1.5);
+    }
+  }
+
   @keyframes bounce {
     0%, 100% {
       transform: translateY(-25%);
@@ -247,26 +289,6 @@
     50% {
       transform: translateY(0);
       animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-    }
-  }
-  @keyframes page1 {
-    from {
-      opacity: 0;
-      transform: translateY(3.125rem);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  @keyframes page1 {
-    from {
-      opacity: 0;
-      transform: translateY(3.125rem);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
     }
   }
 
@@ -281,11 +303,16 @@
   }
 
 
+
   // 폰트 설정
   font-family: 'Rajdhani';
+  &__tit {
+    font-family: 'Inter';
+  }
   ul {
     font-family: 'Chosunilbo_myungjo';
   } 
+
 }
 
 .hide {

@@ -14,7 +14,7 @@
   }
   &__section--intro {
     #{$this}__cont {
-      margin-top: 7rem;
+      margin-top: 10rem;
     }
   }
   &__cont {
@@ -31,7 +31,6 @@
     display: block;
     font-size : 8rem;
     font-weight: 800;
-    font-style: italic;
     margin-bottom: 2rem;
   }
   &__master {
@@ -206,6 +205,9 @@
   }
 
   // career page
+  .page3 {
+    padding-top: 2rem;
+  }
   &__carrerbox {
     display: flex;
     flex-wrap: wrap;
@@ -274,12 +276,11 @@
   
   &__slide-item {
     width: 65%;
-    height: 25rem;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 5rem;
+    top: 9rem;
     z-index: 0;
     opacity: 0;
     transition: all 0.5s ease-in-out;
@@ -302,12 +303,12 @@
   &__slide-desc {
     display: block;
     color : #eee;
-    font-size: 0.5rem;
+    font-size: 1rem;
     text-align: center;
   }
   &__slide-btn {
     position: absolute;
-    top: 14rem;
+    top: 28rem;
     width: calc(100% - 4rem);
     display: flex;
     align-items: center;

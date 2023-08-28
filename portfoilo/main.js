@@ -26,7 +26,6 @@ const cont = document.querySelectorAll('.portfolio__cont')
 observer.observe(cont[0])
 observer.observe(cont[1])
 observer.observe(cont[2])
-observer.observe(cont[3])
 
 
 // const content = 'PORTFOILO';
@@ -71,17 +70,85 @@ typing(document.querySelector('.portfolio__tit'), "PORTFOILO", 200)
 
 // contact
 function phone() {
-  var num = document.querySelector(".portfolio__num");
-  num.style.display = "block";
+  const num = document.querySelector(".portfolio__informtxt--num");
+  if (num.style.display === "block") {
+    num.style.display = "none";
+  } else {
+    num.style.display = "block";
+  }
 }
 
 function mail() {
-  var send = document.querySelector(".portfolio__mailto");
-  send.style.display = "block";
+  const send = document.querySelector(".portfolio__mailto");
+  if (send.style.display === "block") {
+    send.style.display = "none";
+  } else {
+    send.style.display = "block";
+  }
 }
 
-var phoneButton = document.querySelector(".portfolio__contacticon--phone");
+const phoneButton = document.querySelector(".portfolio__contacticon--phone");
 phoneButton.addEventListener('click', phone);
 
-var mailButton = document.querySelector(".portfolio__contacticon--mail");
+const mailButton = document.querySelector(".portfolio__contacticon--mail");
 mailButton.addEventListener('click', mail);
+
+
+
+// slide
+const SHOWING_CL = "portfolio__showing";
+const firstSlider = document.querySelector(".portfolio__slide-item:first-child");
+const sliderBtn = document.querySelector(".portfolio__slide");
+
+function slider(){
+  const currentSlider = document.querySelector(`.${SHOWING_CL}`);
+  if(currentSlider){
+    currentSlider.classList.remove(SHOWING_CL);
+    const nextSlider = currentSlider.nextElementSibling;
+    if(nextSlider){
+      nextSlider.classList.add(SHOWING_CL);
+    }else{
+      firstSlider.classList.add(SHOWING_CL);    
+    }
+  }else{
+    firstSlider.classList.add(SHOWING_CL);
+  }
+}
+function init(){
+  // sliderBtn.addEventListener("click", slider);
+  firstSlider.classList.add(SHOWING_CL);
+}
+init();
+
+
+// slideBtn
+const prevBtn = document.querySelector('.portfolio__btn--prev')
+const nextBtn = document.querySelector('.portfolio__btn--next')
+
+prevBtn.addEventListener('click', prev);
+function prev() {
+  const currentSlider = document.querySelector(`.${SHOWING_CL}`);
+  if (currentSlider) {
+    currentSlider.classList.remove(SHOWING_CL);
+    const prevSlider = currentSlider.previousElementSibling;
+    if (prevSlider) {
+      prevSlider.classList.add(SHOWING_CL);
+    } else {
+      const lastSlider = document.querySelector(".portfolio__slide-item:last-child");
+      lastSlider.classList.add(SHOWING_CL);
+    }
+  }
+}
+nextBtn.addEventListener('click', next);
+function next() {
+  const currentSlider = document.querySelector(`.${SHOWING_CL}`);
+  if (currentSlider) {
+    currentSlider.classList.remove(SHOWING_CL);
+    const nextSlider = currentSlider.nextElementSibling;
+    if (nextSlider) {
+      nextSlider.classList.add(SHOWING_CL);
+    } else {
+      firstSlider.classList.add(SHOWING_CL);
+    }
+  }
+}

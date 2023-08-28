@@ -1,229 +1,290 @@
 <!DOCTYPE html>
 <html lang="en, kr">
-<head>
-  <meta charset="UTF-8">
-  <title>Protfoilo</title>
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
-  <link href="https://webfontworld.github.io/ChosunGs/ChosunGs.css" rel="stylesheet">
-  <!-- google.font Rajdhani -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="portfolio">
-    <!-- intro -->
-    <section class="portfolio__section portfolio__section--intro">
-      <div class="portfolio__titcont">
-        <div class="portfolio__titbox">
-          <h2 class="portfolio__tit"></h2>
-          <span class="portfolio__master"></span>
-        </div>
-        <div class="portfolio__flipbox">
-          <div class="portfolio__filp">
-            <!-- hover시 none -->
-            <div class="portfolio__picture"></div>
-            <!-- hover시 block -->
-            <div class="portfolio__emoji"></div>
+  <head>
+    <meta charset="UTF-8">
+    <title>Protfoilo</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://webfontworld.github.io/ChosunGs/ChosunGs.css" rel="stylesheet">
+    <!-- google.font Rajdhani -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="portfolio">
+      <!-- intro -->
+      <section class="portfolio__section portfolio__section--intro">
+        <div class="portfolio__titcont">
+          <div class="portfolio__titbox">
+            <h2 class="portfolio__tit"></h2>
+            <span class="portfolio__master"></span>
+          </div>
+          <div class="portfolio__flipbox">
+            <div class="portfolio__filp">
+              <!-- hover시 none -->
+              <div class="portfolio__picture"></div>
+              <!-- hover시 block -->
+              <div class="portfolio__emoji"></div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="portfolio__cont">
-        <span class="portfolio__linktit">아래 이미지를 클릭하시면 페이지로 이동합니다</span>
-        <div class="portfolio__linkcont">
-          <div class="portfolio__link">
-            <a href="https://kcong0505.tistory.com/" target="_blank">
-              <div class="portfolio__tistory">
-                <img src="./image/icon_tstory.svg" alt="티스토리 이모티콘" />
+        <div class="portfolio__cont">
+          <span class="portfolio__linktit">아래 이미지를 클릭하시면 페이지로 이동합니다</span>
+          <div class="portfolio__linkcont">
+            <div class="portfolio__link">
+              <a href="https://kcong0505.tistory.com/" target="_blank">
+                <div class="portfolio__tistory">
+                  <img src="./image/icon_tstory.svg" alt="티스토리 이모티콘" />
+                </div>
+              </a>
+            </div>
+            <div class="portfolio__link">
+              <a href="https://hospitable-mitten-6bb.notion.site/f9b0c2043fdf4c4eb773b5b888b1ebc8?pvs=4" target="_blank">
+                <div class="portfolio__notion">
+                  <img src="./image/icon_notion.svg" alt="노션 이모티콘"/>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="portfolio__informbox">
+            <div class="portfolio__inform">
+              <button class="portfolio__contacticon portfolio__contacticon--phone">
+                <img src="./image/icon_phone.png" alt="phone 아이콘" />
+                <span class="hide">연락처</span>
+              </button>
+              <span class="portfolio__informtxt portfolio__informtxt--num">010-5199-0558</span>
+              <!-- <div class="portfolio__numbox">
+                <span class="portfolio__num">010-5199-0558</span>
+              </div> -->
+            </div>
+            <div class="portfolio__inform">
+              <button class="portfolio__contacticon portfolio__contacticon--mail">
+                <img src="./image/icon_mail.svg" alt="mail 아이콘" />
+              </button>
+              <a href="mailto:dbdpsk8871@naver.com" class="portfolio__mailto" >
+                <span class="portfolio__informtxt portfolio__informtxt--send">메일 보내기</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- skill -->
+      <section class="portfolio__section portfolio__section--skill">
+        <div class="portfolio__cont">
+          <div class="portfolio__skilldesc">
+            <div class="portfolio__skillbox">
+              <span class="portfolio__skilltit">Front-End</span>
+              <div class="portfolio__language">
+                <img src="./image/icon_html.png" alt="HTML" />
               </div>
-            </a>
-          </div>
-          <div class="portfolio__link">
-            <a href="https://hospitable-mitten-6bb.notion.site/f9b0c2043fdf4c4eb773b5b888b1ebc8?pvs=4" target="_blank">
-              <div class="portfolio__notion">
-                <img src="./image/icon_notion.svg" alt="노션 이모티콘"/>
+              <div class="portfolio__language">
+                <img src="./image/icon_pug.svg" alt="PUG" />
               </div>
-            </a>
+              <div class="portfolio__language">
+                <img src="./image/icon_css.png" alt="CSS" />
+              </div>
+              <div class="portfolio__language">
+                <img src="./image/icon_scss.png" alt="SCSS" />
+              </div>
+              <div class="portfolio__language">
+                <img src="./image/icon_js.png" alt="JS" />
+              </div>
+              <div class="portfolio__language">
+                <img src="./image/icon_typescript_96.svg" alt="TypeScript" />
+              </div>
+              <div class="portfolio__language">
+                <img src="./image/icon_vue_96.png" alt="Vue3" />
+              </div>
+            </div>
+
+            <div class="portfolio__skillbox">
+              <span class="portfolio__skilltit">Collaboration & Tools</span>
+              <div class="portfolio__language">
+                <img src="./image/icon_git.svg" alt="Git" />
+              </div>
+              <div class="portfolio__language">
+                <img src="./image/icon_gitlab.svg" alt="GitLab" />
+              </div>
+              <div class="portfolio__language">
+                <img src="./image/icon_github.png" alt="GitHub" />
+              </div>
+              <div class="portfolio__language">
+                <img src="./image/icon_figma_96.svg" alt="Figma" />
+              </div>
+              <div class="portfolio__language">
+                <img src="./image/icon_zeplin.svg" alt="Zeplin" />
+              </div>
+              <div class="portfolio__language">
+                <img src="./image/icon_jira.svg" alt="Jira" />
+              </div>
+              <div class="portfolio__language">
+                <img src="./image/icon_slack.svg" alt="slack" />
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__arrow">
+            <img class="portfolio__down" src="./image/icon_arrow_down.svg" alt="아래 화살표" />
           </div>
         </div>
-      </div>
-    </section>
-    
-    <!-- skill -->
-    <section class="portfolio__section portfolio__section--skill">
-      <div class="portfolio__cont">
-        <div class="portfolio__skilldesc">
-          <div class="portfolio__skillbox">
-            <span class="portfolio__skilltit">Front-End</span>
-            <div class="portfolio__language">
-              <img src="./image/icon_html.png" alt="HTML" />
+      </section>
+
+      <!-- career -->
+      <section class="portfolio__section portfolio__section--career">
+        <div class="portfolio__cont">
+          <span class="portfolio__slide-desc">본 이미지는 프로젝트 내용과 다를 수 있습니다.</span>
+          <!-- slide -->
+          <div class="portfolio__slide">
+            <div class="portfolio__slide-item">
+              <a class="portfolio__slide-img" target="_blank" href="https://hospitable-mitten-6bb.notion.site/915523f8be4d4478ab3234aa11bcbc1e">
+                <img src="./image/img_hecto.png" alt="Hecto 홈페이지 이미지" />
+              </a>
             </div>
-            <div class="portfolio__language">
-              <img src="./image/icon_pug.svg" alt="PUG" />
+            <div class="portfolio__slide-item">
+              <a class="portfolio__slide-img" target="_blank" href="https://hospitable-mitten-6bb.notion.site/d480b9b58f924d4d94743143ea274568">
+                <img src="./image/img_kf.png" alt="한국교류재단 홈페이지 이미지" />
+              </a>
             </div>
-            <div class="portfolio__language">
-              <img src="./image/icon_css.png" alt="CSS" />
+            <div class="portfolio__slide-item">
+              <a class="portfolio__slide-img" target="_blank" href="https://hospitable-mitten-6bb.notion.site/LG-com-GP1-2-3d9e6bcc6f8d4f16b4cc7b65a18d0c12">
+                <img src="./image/img_lg.png" alt="LG_en 홈페이지 이미지" />
+              </a>
             </div>
-            <div class="portfolio__language">
-              <img src="./image/icon_scss.png" alt="SCSS" />
+            <div class="portfolio__slide-item">
+              <a class="portfolio__slide-img" target="_blank" href="https://hospitable-mitten-6bb.notion.site/SDS-6696ece4dbab43219dc99db51e6226af">
+                <img src="./image/img_sds.png" alt="삼성SDS 홈페이지 이미지" />
+              </a>
             </div>
-            <div class="portfolio__language">
-              <img src="./image/icon_js.png" alt="JS" />
-            </div>
-            <div class="portfolio__language">
-              <img src="./image/icon_typescript_96.svg" alt="TypeScript" />
-            </div>
-            <div class="portfolio__language">
-              <img src="./image/icon_vue_96.png" alt="Vue3" />
+            <div class="portfolio__slide-item">              
+              <a class="portfolio__slide-img" target="_blank" href="https://hospitable-mitten-6bb.notion.site/31273833d17646899caf4ae0c9670000">
+                <img src="./image/img_aplus.png" alt="Aplus 홈페이지 이미지" />
+              </a>
             </div>
           </div>
 
-          <div class="portfolio__skillbox">
-            <span class="portfolio__skilltit">Collaboration & Tools</span>
-            <div class="portfolio__language">
-              <img src="./image/icon_git.svg" alt="Git" />
-            </div>
-            <div class="portfolio__language">
-              <img src="./image/icon_gitlab.svg" alt="GitLab" />
-            </div>
-            <div class="portfolio__language">
-              <img src="./image/icon_github.png" alt="GitHub" />
-            </div>
-            <div class="portfolio__language">
-              <img src="./image/icon_figma_96.svg" alt="Figma" />
-            </div>
-            <div class="portfolio__language">
-              <img src="./image/icon_zeplin.svg" alt="Zeplin" />
-            </div>
-            <div class="portfolio__language">
-              <img src="./image/icon_jira.svg" alt="Jira" />
-            </div>
-            <div class="portfolio__language">
-              <img src="./image/icon_slack.svg" alt="slack" />
-            </div>
-          </div>
-        </div>
-        <div class="portfolio__arrow">
-          <img class="portfolio__down" src="./image/icon_arrow_down.svg" alt="아래 화살표" />
-        </div>
-      </div>
-    </section>
-
-    <!-- career -->
-    <section class="portfolio__section portfolio__section--career">
-      <div class="portfolio__cont">
-        <div class="portfolio__carrerbox">
-          <!-- 헥토 -->
-          <div class="portfolio__project">
-            <span class="portfolio__project-tit">헥토헬스케어 앱 구축</span>
-            <span class="portfolio__project-date">2023.05.02 ~ 2023.08.31</span>
-            <span class="portfolio__project-language">Vue3, css(Sass/BEM), typeScript</span>
-            <div class="portfolio__detail">
-              <span class="portfolio__detail-tit">개요</span>
-              <span class="portfolio__detail-desc">
-                - 개발 인원 프론트 2명, 백 6명(고객사)<br />
-                - 헬스케어 서비스 앱 개발
-              </span>
-            </div>
-            <div class="portfolio__detail">
-              <span class="portfolio__detail-tit">수행업무</span>
-              <span class="portfolio__detail-desc">
-                - vue3 컴포넌트 제작 및 퍼블리싱<br />
-                - 총 페이지(130page) 중 75% 퍼블리싱
-              </span>
-            </div>
-          </div>
-
-          <!-- 한국교류재단 -->
-          <div class="portfolio__project">
-            <span class="portfolio__project-tit">한국교류재단 운영 </span>
-            <span class="portfolio__project-date">2022.09.14~ 2023.08.14</span>
-            <span class="portfolio__project-language">HTML, css</span>
-            <div class="portfolio__detail">
-              <span class="portfolio__detail-tit">개요</span>
-              <span class="portfolio__detail-desc">- 개발 인원 : 퍼블 1명, 백 2명<br />
-                - 한국교류재단 홈페이지 운영 및 개간지, 웹진 퍼블리싱</span>
-            </div>
-            <div class="portfolio__detail">
-              <span class="portfolio__detail-tit">수행업무</span>
-              <span class="portfolio__detail-desc">
-                - 한국교류재단, KF아세안문화원, 한-중앙아협력포럼사무국, 코리아나,KF뉴스레터, 통합예약포털 등 운영<br />
-                - 한국교류재단 웹접근성 인증마크 갱신(2023.04) <br />
-                - 월간 웹진, 분기별 개간지(코리아나) 퍼블리싱
-              </span>
-            </div>
+          <div class="portfolio__slide-btn">
+            <button class="portfolio__btn portfolio__btn--prev">
+              <span class="hide">prev</span>
+            </button>
+            <button class="portfolio__btn portfolio__btn--next">
+              <span class="hide">prev</span>
+            </button>
           </div>
           
-          <!-- LG.com GP1 2차  -->
-          <div class="portfolio__project">
-            <span class="portfolio__project-tit">LG.com GP1 2차 구축</span>
-            <span class="portfolio__project-date">2023.04.03 ~ 2023.04.28</span>
-            <span class="portfolio__project-language">HTML(pug), css(Sass), vanilla script</span>
-            <div class="portfolio__detail">
-              <span class="portfolio__detail-tit">개요</span>
-              <span class="portfolio__detail-desc">- 개발 인원 : 퍼블 5명</span>
-            </div>
-            <div class="portfolio__detail">
-              <span class="portfolio__detail-tit">수행업무</span>
-              <span class="portfolio__detail-desc">
-                - 9개 국가 중 호주, 멕시코 디자인에 맞춘 퍼블리싱<br />
-                - UK : 카트, checkout, search, Quick menu, About LG 페이지 수정
-              </span>
-            </div>
-          </div>
 
-          <!-- 의전관리시스템  -->
-          <div class="portfolio__project">
-            <span class="portfolio__project-tit">의전관리시스템 구축</span>
-            <span class="portfolio__project-date">2022.12.27 ~ 2023.01.26</span>
-            <span class="portfolio__project-language">HTML, css(Sass/BEM), Jquery</span>
-            <div class="portfolio__detail">
-              <span class="portfolio__detail-tit">개요</span>
-              <span class="portfolio__detail-desc">- 개발 인원 : 퍼블 2명<br />
-                - 모바일 웹(하이브리드) 통합 시스템 개발<br />
-                - 기존 재고관리 시스템과 의전 관리 시스템의 통합
-                - 화면 : PC, 태블릿
-              </span>
-            </div>
-            <div class="portfolio__detail">
-              <span class="portfolio__detail-tit">수행업무</span>
-              <span class="portfolio__detail-desc">
-                - 의전 시스템 디자인에 따른 퍼블리싱<br />
-                - 총 페이지(80 page) 중 80% 퍼블리싱            
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- contact -->
-    <section class="portfolio__section portfolio__section--contact">
-      <div class="portfolio__cont">
-        <div class="portfolio__informbox">
-          <div class="portfolio__inform">
-            <button class="portfolio__contacticon portfolio__contacticon--phone">
-              <img src="./image/icon_phone.png" alt="phone 아이콘" />
-              <span class="hide">연락처</span>
-            </button>
-            <span class="portfolio__num">010-5199-0558</span>
-            <!-- <div class="portfolio__numbox">
-              <span class="portfolio__num">010-5199-0558</span>
+          <!-- <div class="portfolio__carrerbox"> -->
+            <!-- 헥토 -->
+            <!-- <div class="portfolio__project">
+              <span class="portfolio__project-tit">헥토헬스케어 앱 구축</span>
+              <span class="portfolio__project-date">2023.05.02 ~ 2023.08.31</span>
+              <span class="portfolio__project-language">Vue3, css(Sass/BEM), typeScript</span>
+              <div class="portfolio__detail">
+                <span class="portfolio__detail-tit">개요</span>
+                <span class="portfolio__detail-desc">
+                  - 개발 인원 프론트 2명, 백 6명(고객사)<br />
+                  - 헬스케어 서비스 앱 개발
+                </span>
+              </div>
+              <div class="portfolio__detail">
+                <span class="portfolio__detail-tit">수행업무</span>
+                <span class="portfolio__detail-desc">
+                  - vue3 컴포넌트 제작 및 퍼블리싱<br />
+                  - 총 페이지(130page) 중 75% 퍼블리싱
+                </span>
+              </div>
             </div> -->
-          </div>
-          <div class="portfolio__inform">
-            <button class="portfolio__contacticon portfolio__contacticon--mail">
-              <img src="./image/icon_mail.svg" alt="mail 아이콘" />
-            </button>
-            <a href="mailto:dbdpsk8871@naver.com" class="portfolio__mailto" >
-              <span class="portfolio__send">메일 보내기</span>
-            </a>
-          </div>
+
+            <!-- 한국교류재단 -->
+            <!-- <div class="portfolio__project">
+              <span class="portfolio__project-tit">한국교류재단 운영 </span>
+              <span class="portfolio__project-date">2022.09.14~ 2023.08.14</span>
+              <span class="portfolio__project-language">HTML, css</span>
+              <div class="portfolio__detail">
+                <span class="portfolio__detail-tit">개요</span>
+                <span class="portfolio__detail-desc">- 개발 인원 : 퍼블 1명, 백 2명<br />
+                  - 한국교류재단 홈페이지 운영 및 개간지, 웹진 퍼블리싱</span>
+              </div>
+              <div class="portfolio__detail">
+                <span class="portfolio__detail-tit">수행업무</span>
+                <span class="portfolio__detail-desc">
+                  - 한국교류재단, KF아세안문화원, 한-중앙아협력포럼사무국, 코리아나,KF뉴스레터, 통합예약포털 등 운영<br />
+                  - 한국교류재단 웹접근성 인증마크 갱신(2023.04) <br />
+                  - 월간 웹진, 분기별 개간지(코리아나) 퍼블리싱
+                </span>
+              </div>
+            </div> -->
+            
+            <!-- LG.com GP1 2차  -->
+            <!-- <div class="portfolio__project">
+              <span class="portfolio__project-tit">LG.com GP1 2차 구축</span>
+              <span class="portfolio__project-date">2023.04.03 ~ 2023.04.28</span>
+              <span class="portfolio__project-language">HTML(pug), css(Sass), vanilla script</span>
+              <div class="portfolio__detail">
+                <span class="portfolio__detail-tit">개요</span>
+                <span class="portfolio__detail-desc">- 개발 인원 : 퍼블 5명</span>
+              </div>
+              <div class="portfolio__detail">
+                <span class="portfolio__detail-tit">수행업무</span>
+                <span class="portfolio__detail-desc">
+                  - 9개 국가 중 호주, 멕시코 디자인에 맞춘 퍼블리싱<br />
+                  - UK : 카트, checkout, search, Quick menu, About LG 페이지 수정
+                </span>
+              </div>
+            </div> -->
+
+            <!-- 삼성SDS  -->
+            <!-- <div class="portfolio__project">
+              <span class="portfolio__project-tit">삼성 SDS 운영</span>
+              <span class="portfolio__project-date">2022.01.01 ~ 2022.12.31</span>
+              <span class="portfolio__project-language">HTML, css, Jquery</span>
+              <div class="portfolio__detail">
+                <span class="portfolio__detail-tit">개요</span>
+                <span class="portfolio__detail-desc">- 개발 인원 : PM 1명, 디자인 2명, 퍼블 3명, 백 2명</span>
+              </div>
+              <div class="portfolio__detail">
+                <span class="portfolio__detail-tit">수행업무</span>
+                <span class="portfolio__detail-desc">
+                  - 삼성SDS 홈페이지 운영<br />
+                  - 삼성SDS 홈페이지 웨비나 신규 서비스 유지보수<br />
+                  - 삼성SDS 홈페이지 신규 목록 페이지 제작
+                </span>
+              </div>
+            </div> -->
+            
+            <!-- 의전관리시스템  -->
+            <!-- <div class="portfolio__project">
+              <span class="portfolio__project-tit">의전관리시스템 구축</span>
+              <span class="portfolio__project-date">2022.12.27 ~ 2023.01.26</span>
+              <span class="portfolio__project-language">HTML, css(Sass/BEM), Jquery</span>
+              <div class="portfolio__detail">
+                <span class="portfolio__detail-tit">개요</span>
+                <span class="portfolio__detail-desc">- 개발 인원 : 퍼블 2명<br />
+                  - 모바일 웹(하이브리드) 통합 시스템 개발<br />
+                  - 기존 재고관리 시스템과 의전 관리 시스템의 통합
+                  - 화면 : PC, 태블릿
+                </span>
+              </div>
+              <div class="portfolio__detail">
+                <span class="portfolio__detail-tit">수행업무</span>
+                <span class="portfolio__detail-desc">
+                  - 의전 시스템 디자인에 따른 퍼블리싱<br />
+                  - 총 페이지(80 page) 중 80% 퍼블리싱            
+                </span>
+              </div>
+            </div> -->
+          <!-- </div> -->
+          
         </div>
-      </div>
-    </section>
-  </div>
-  <!-- script -->
-  <script src="main.js"></script>
-</body>
+      </section>
+
+      <!-- contact -->
+      <!-- <section class="portfolio__section portfolio__section--contact">
+        <div class="portfolio__cont">
+          
+        </div>
+      </section> -->
+    </div>
+    <!-- script -->
+    <script src="main.js"></script>
+  </body>
 </html>

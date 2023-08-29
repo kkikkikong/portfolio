@@ -91,13 +91,11 @@
   margin-left: 0.625rem;
 }
 .portfolio__notion > img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 6.25rem;
 }
 .portfolio__tistory > img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 2.5rem;
   padding-top: 0.625rem;
   margin-left: -2.1rem;
@@ -126,8 +124,7 @@
 .portfolio__contacticon > img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .portfolio__informtxt--num {
   display: none;
@@ -166,8 +163,7 @@
 .portfolio__language > img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .portfolio__language:hover img {
   animation: vibration 0.3s ease-in-out;
@@ -265,8 +261,7 @@
 }
 .portfolio__slide-img > img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .portfolio__showing {
   z-index: 1;

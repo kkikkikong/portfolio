@@ -1,0 +1,46 @@
+html, body {
+  height: 100vh;
+  // 5px = 1rem
+  font-size: 31.25% !important;
+
+  // mobile 390px 기준 5px = 1rem
+  @media screen and (max-width:540px){
+    font-size: 1.3888vw !important;
+  }
+}
+body {  
+  overflow: auto;
+}
+
+// #app {
+//   max-width: 1280px;
+//   margin: 0 auto;
+//   padding: 2rem;
+//   font-weight: normal;
+// }
+.inner {
+  padding: 7rem 2rem;
+  width: 100%;
+  height: 100vh;
+  background-color: #f3ece7;
+}
+.container {
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  &--black {
+    background-color: #000;
+  }
+}
+
+.hide {
+  overflow: hidden;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 1px;
+  height: 1px;
+  text-indent: 0;
+  line-height: 0.1;
+  clip: rect(1px, 1px, -1px, -1px);
+}

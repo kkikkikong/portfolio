@@ -38,7 +38,7 @@
 
 <style lang="scss">
   .container--black {
-    animation: phone 0.5s 2s forwards;
+    animation: phone 0.3s 2s ease-in forwards;
   }
   .intro-page {
     &__today {
@@ -62,7 +62,19 @@
   }
   // keyframes
   @keyframes phone {
-    to {
+    0% {
+      background: url(../assets/images/img_phoneback.png) center / cover no-repeat;
+      opacity: 0.3;
+    }
+    30% {
+      background: url(../assets/images/img_phoneback.png) center / cover no-repeat;
+      opacity: 0.5;
+    }
+    60% {
+      background: url(../assets/images/img_phoneback.png) center / cover no-repeat;
+      opacity: 0.8;
+    }
+    100% {
       background: url(../assets/images/img_phoneback.png) center / cover no-repeat;
     }
   }

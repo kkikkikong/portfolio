@@ -1,5 +1,6 @@
 <template>
   <div class="container container--opacity">
+    <statusBar />
     <div class="phone-main">
       <div class="phone-main__appbox">
         <div class="phone-main__app">
@@ -16,8 +17,13 @@
 </template>
 
 <script>
-export default {
+  import statusBar from '@/components/StatusBar.vue';
+
+  export default {
     name: 'phoneMain',
+    components: {
+      statusBar,
+    },
     props: {
     },
     data() {

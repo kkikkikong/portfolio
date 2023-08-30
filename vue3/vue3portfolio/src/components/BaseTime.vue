@@ -39,7 +39,6 @@
 
 .base-time {
   color: #333;
-  padding-left: 1rem;
   font-size: 4rem;
   font-weight: 500;
 }

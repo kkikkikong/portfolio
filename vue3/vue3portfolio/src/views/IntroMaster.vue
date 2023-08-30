@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <baseTime />
     <div class="intro-master">
       <div class="intro-master__intro">
         <div class="intro-master__img">
@@ -44,7 +43,7 @@
           </div>
         </a>
         <a class="intro-master__link" href="https://kcong0505.tistory.com/" target="_blank">
-          <div class="intro-master__linkicon">
+          <div class="intro-master__linkicon intro-master__linkicon--blog">
             <img src="../assets/images/icon_tstory2.png" alt="블로그 이미지"/>
           </div>
         </a>
@@ -55,12 +54,10 @@
 
 <script>
   import { ref } from 'vue';
-  import baseTime from '@/components/BaseTime.vue';
 
   export default {
     name: 'introMaster.vue',
     components: {
-      baseTime,
     },
     props: {
     },
@@ -88,10 +85,25 @@
 
 <style lang="scss">
   .intro-master {
-    padding-top: 5rem;
+    position: relative;
+    padding: 3rem 2rem;
+    background-color: #e9e9eb;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 8%;
+      border: 48px solid transparent;
+      border-top-color: #e9e9eb;
+      transform: rotate(282deg);
+      bottom: -47px;
+    }
     &__intro {
       display: flex;
       gap: 5rem;
+      padding: 0 3rem;
     }
     &__img {
       flex: 1.5;
@@ -109,9 +121,11 @@
       margin-bottom: 3rem;
       font-size: 6rem;
       font-weight: 700;
+      text-align: center;
     }
     &__personal {
       display: flex;
+      justify-content: center;
       margin-top: 6rem;
     }
     &__iconbox {
@@ -152,12 +166,12 @@
       margin-top: 2rem;
     }
     &__list {
-      padding: 5rem 0 2rem;
+      padding: 7rem 1.5rem 2rem;
       li {
         position: relative;
         padding-left: 2rem;
         font-size: 3.5rem;
-        line-height: 4rem;
+        line-height: 5rem;
         &::before {
           content: "";
           width: 0.8rem;
@@ -180,7 +194,7 @@
       padding: 5rem 2rem 0;
     }
     &__link + &__link {
-      padding-left: 5rem;
+      padding-left: 4rem;
     }
     &__link {
       display: block;
@@ -192,6 +206,9 @@
         width: 100%;
         height: 100%;
         object-fit: contain;
+      }
+      &--blog {
+        width: 17rem;
       }
     }
   }

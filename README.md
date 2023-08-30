@@ -10,7 +10,7 @@
 
 
 
-# vue3ing
+# vue3Portfolio
 ## language
 - vue3
 - css(scss / bem)

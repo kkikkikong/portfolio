@@ -4,8 +4,7 @@
       <div class="intro-page__today">
         <baseDay />
         <baseTime />
-        <messageBox blind @click="blindOff"/>
-        <messageBox v-if="onClick" />
+        <messageBox />
       </div>
     </div>
   </div>

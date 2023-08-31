@@ -8,8 +8,8 @@
       @click="isTab(index)"
     />
   </div>
-  <div v-if="tabPanel === 0" class="tab-panel">111</div>
-  <div v-if="tabPanel === 1" class="tab-panel">222</div>
+  <div v-if="tabPanel === 0" class="tab-panel">첫번째</div>
+  <div v-if="tabPanel === 1" class="tab-panel">두번째</div>
 </template>
 
 <script setup>

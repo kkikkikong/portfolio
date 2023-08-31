@@ -8,8 +8,8 @@
       @click="isTab(index)"
     />
   </div>
-  <div v-if="tabPanel === 0" class="tab-panel">11111</div>
-  <div v-if="tabPanel === 1" class="tab-panel">22222</div>
+  <div v-if="tabPanel === 0" class="tab-panel">첫번째</div>
+  <div v-if="tabPanel === 1" class="tab-panel">두번째</div>
 </template>
 
 <script setup>
@@ -23,10 +23,10 @@ const isTab = (index) => {
 
 const tabList = ref([
   {
-    label:'aaa',
+    label:'첫번째',
   },
   {
-    label: 'bbbb',
+    label: '두번째',
   },
 ])
 </script>

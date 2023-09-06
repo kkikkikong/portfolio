@@ -76,7 +76,7 @@ export default {
     }
     &__msgtit {
       padding-left: 1rem;
-      font-size: 1.8rem;
+      font-size: 2.5rem;
     }
     &__msgsender {
       display: block;

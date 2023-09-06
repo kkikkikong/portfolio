@@ -7,7 +7,7 @@
             <img src="../assets/images/photo_yena.png" alt="소유자 사진"/>
           </div>
           <div class="intro-master__info">
-            <span class="intro-master__name">유예나</span>
+            <h2 class="intro-master__name">유예나</h2>
             <div class="intro-master__personal">
               <div class="intro-master__iconbox">
                 <button class="intro-master__icon" @click="phoneBtn">
@@ -50,7 +50,7 @@
           </a>
         </div>
       </div>
-      <router-link to="/ListTab" class="intro-master__next">
+      <router-link to="/HistoryList" class="intro-master__next">
         <span class="intro-master__next-txt">이력사항 보러가기</span>
       </router-link>
     </div>
@@ -225,7 +225,7 @@
       justify-content: right;
       margin-top: 6rem;
       text-align: right;
-      font-size: 3rem;
+      font-size: 3.5rem;
       &::after {
         content: '';
         width: 3rem;

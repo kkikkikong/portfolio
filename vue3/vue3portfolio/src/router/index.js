@@ -3,6 +3,7 @@ import introPage from "@/views/IntroPage.vue";
 import introMaster from "@/views/IntroMaster.vue";
 import phoneMain from "@/views/PhoneMain.vue";
 import listTab from "@/views/ListTab.vue";
+import historyList from "@/views/HistoryList.vue";
 
 const routes = [
     {
@@ -28,6 +29,11 @@ const routes = [
         path: "/ListTab",
         name: "ListTab",
         component: listTab,
+    },
+    {
+        path: "/HistoryList",
+        name: "HistoryList",
+        component: historyList,
     },
 ];
 

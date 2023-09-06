@@ -49,6 +49,7 @@
   &__inner {
     width: calc(100% - 8rem);
     height: calc(100% - 35rem);
+    overflow: auto;
     border: 2px solid #131212;
     margin: 7rem auto 0;
     background-color: #fff;

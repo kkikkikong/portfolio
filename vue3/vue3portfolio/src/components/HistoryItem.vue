@@ -53,7 +53,7 @@ export default {
       background-color: #c8cffa;
       color: #3042e6;
       font-size: 2.8rem;
-      border-radius: 1.5rem;
+      border-radius: 2rem;
       padding: 1rem 1.5rem;
       margin: 7rem 0 2rem 2rem;
     }

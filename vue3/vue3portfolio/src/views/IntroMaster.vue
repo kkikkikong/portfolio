@@ -52,6 +52,7 @@
       </div>
       <router-link to="/HistoryList" class="intro-master__next">
         <span class="intro-master__next-txt">이력사항 보러가기</span>
+        <span class="intro-master__next-arrow"></span>
       </router-link>
     </div>
   </div>
@@ -220,19 +221,23 @@
       }
     }
     &__next {
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: right;
       margin-top: 6rem;
-      text-align: right;
       font-size: 3.5rem;
-      &::after {
-        content: '';
-        width: 3rem;
-        height: 3rem;
-        background: url(../assets/images/icon_arrow_right2.png) center / contain no-repeat;
-        margin-left: 0.5rem;
-      }
+    }
+    &__next-txt {
+      padding-right: 7.4rem;
+    }
+    &__next-arrow {
+      position: absolute;
+      width: 3.5rem;
+      height: 3.5rem;
+      background: url(../assets/images/icon_arrow_right2.png) center / contain no-repeat;
+      margin-left: 1rem;
+      animation: nextPage 1s ease-in infinite;
     }
   }
 
@@ -246,5 +251,16 @@
 .fade-leave-to {
   opacity: 0;
 }
+@keyframes nextPage {
+    0% {
+      margin-right: 2rem;
+    }
+    50% {
+      margin-right: 3rem;
+    }
+    100% {
+      margin-right: 2rem;
+    }
+  }
 
 </style>

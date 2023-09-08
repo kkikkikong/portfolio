@@ -1,7 +1,6 @@
 <template>
   <div class="history-list">
     <h2 class="history-list__tit">포트폴리오</h2>
-    <span class="history-list__swiperdesc">이미지를 클릭하시면 세부내용을 확인 할 수 있습니다.</span>
     <swiper
       :modules="modules"
       :pagination="{
@@ -139,11 +138,7 @@ const descItem = ref ([
   &__tit {
     font-size: 6rem;
     font-weight: 600;
-  }
-  &__swiperdesc {
-    display: block;
-    margin: 7rem 0 3rem;
-    font-size: 2.8rem;
+    margin-bottom: 5rem;
   }
   &__swiper-pagination {
     position: absolute;

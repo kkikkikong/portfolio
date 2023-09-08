@@ -2,7 +2,7 @@
   <div class="history-item">
     <button type="button" class="history-item__slide"  @click="$emit('handleClick')">
       <div class="history-item__img">
-        <img :src="`images/${historyImg}.png`" :alt="historyImg">
+        <img :src="`images/${historyImg}.png`" :alt="historyImg" />
       </div>
       <span v-if="imgDesc.length > 0" class="history-item__imgdesc"> {{ imgDesc }}</span>
     </button>
@@ -43,6 +43,32 @@ export default {
     $this: '.history-item';
     &__slide {
       text-align: left;
+      position: relative;
+      &:hover {
+        img {
+          opacity: 0.8;
+          transform: scale(1.2);
+          transition: all 0.2s linear;
+        }
+        // #{$this}__img {
+        //   &::after {
+        //     content: '';
+        //     display: flex;
+        //     position: absolute;
+        //     width: 15rem;
+        //     height: 15rem;
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translate(-50%, -50%);
+        //     background: url(../assets/images/icon_click.png) center / cover no-repeat;
+        //     opacity: 0.5;
+        //     z-index: 2;
+        //   }
+        // }
+      }
+    }
+    &__img {
+      overflow: hidden;
     }
     &__imgdesc {
       color: #666;

@@ -17,7 +17,14 @@
 # 2️⃣ vue3Portfolio
  Vue3의 router간 이동과 vue 문법을 사용한 포트폴리오 제작 
  <br /><br />
- 
+
+## language
+<div style= display: flex; gap: 10px;>
+ <img src="https://img.shields.io/badge/Vue-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white"/>
+ <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white"/>
+</div>
+ <br /><br />
+
 ## Installation
 프로젝트 위치(VUE3PORTFOLIO)에서 터미널 실행
 
@@ -28,8 +35,4 @@ npm run bulid
 ```
 
  
-## language
-<div style= display: flex; gap: 10px;>
- <img src="https://img.shields.io/badge/Vue-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white"/>
- <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white"/>
-</div>
+

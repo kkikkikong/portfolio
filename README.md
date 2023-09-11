@@ -1,7 +1,7 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kkikkikong&layout=compact)](https://github.com/kkikkikong/github-readme-stats)
 
 
-# portfolio
+# 1️⃣ portfolio
  기본 언어를 사용한 포트폴리오 제작
  
 ## language
@@ -11,9 +11,9 @@
  <img src="https://img.shields.io/badge/Vanila Script-F7DF1E?style=flat-square&logo=javascript&logoColor=white"/>
 </div>
 
-<br /><br />
+<br /><br /><br />
 
-# vue3Portfolio
+# 2️⃣ vue3Portfolio
  Vue3의 router간 이동과 vue 문법을 사용한 포트폴리오 제작 
 
 ## Installation

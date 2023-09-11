@@ -1,8 +1,9 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kkikkikong&layout=compact)](https://github.com/kkikkikong/github-readme-stats)
-
+<br /><br />
 
 # 1️⃣ portfolio
  기본 언어를 사용한 포트폴리오 제작
+ <br /><br />
  
 ## language
 <div style= display: flex; gap: 10px;>
@@ -15,7 +16,8 @@
 
 # 2️⃣ vue3Portfolio
  Vue3의 router간 이동과 vue 문법을 사용한 포트폴리오 제작 
-
+ <br /><br />
+ 
 ## Installation
 프로젝트 위치(VUE3PORTFOLIO)에서 터미널 실행
 

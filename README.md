@@ -2,9 +2,11 @@
  기본 언어를 사용한 포트폴리오 제작
  
 ## language
-<img src="https://img.shields.io/badge/HTML-34F26?style=flat-square&logo=HTML5&logoColor=white"/>
-<img src="https://img.shields.io/badge/HTML-1572B6?style=flat-square&logo=css3&logoColor=white"/>
-<img src="https://img.shields.io/badge/HTML-F7DF1E?style=flat-square&logo=javascript&logoColor=white"/>
+<div style= display: flex; gap: 10px;>
+ <img src="https://img.shields.io/badge/HTML-34F26?style=flat-square&logo=HTML5&logoColor=white"/>
+ <img src="https://img.shields.io/badge/HTML-1572B6?style=flat-square&logo=css3&logoColor=white"/>
+ <img src="https://img.shields.io/badge/HTML-F7DF1E?style=flat-square&logo=javascript&logoColor=white"/>
+ </div>
 - Html
 - css(scss / bem)
 - vanila script

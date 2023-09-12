@@ -15,7 +15,7 @@
         <div class="phone-main__app">
           <button class="phone-main__icon phone-main__icon--call"><span class="hide">전화걸기</span></button>
           <button class="phone-main__icon phone-main__icon--safari"><span class="hide">인터넷 연결하기</span></button>
-          <button class="phone-main__icon phone-main__icon--send" @click="isMsg">
+          <button :class="`phone-main__icon ${popUp ? 'phone-main__icon--sendoff' : 'phone-main__icon--send'}`" @click="isMsg">
             <div class="phone-main__badge"></div>
             <div class="phone-main__message"></div>
             <span class="hide">메세지보내기</span>
@@ -129,9 +129,12 @@
     &--safari {
       background: #fff url(../assets/images/icon_safari.png) center / contain no-repeat;
     }
-    &--send {
+    &--send, &--sendoff {
       position: relative;
       background-color: #35c235;
+    }
+    &--send {
+      animation: vibration .5s infinite;
     }
     &--music {
       background: url(../assets/images/icon_music.svg) center / 70% no-repeat, linear-gradient(to bottom, #fb5b73, #fa253d);
@@ -206,5 +209,20 @@
       justify-content: space-between;
     }
   }
+  @keyframes vibration {
+    0% {
+      transform: rotate(3deg);
+    }
+    40% {
+      transform: rotate(0deg);
+    }
+    80% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(3deg);
+    }
+  }
 }
+
 </style>

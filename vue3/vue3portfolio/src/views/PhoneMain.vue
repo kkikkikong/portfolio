@@ -15,13 +15,20 @@
         <div class="phone-main__app">
           <button class="phone-main__icon phone-main__icon--call"><span class="hide">전화걸기</span></button>
           <button class="phone-main__icon phone-main__icon--safari"><span class="hide">인터넷 연결하기</span></button>
-          <button class="phone-main__icon phone-main__icon--send">
+          <button class="phone-main__icon phone-main__icon--send" @click="isMsg">
+            <div class="phone-main__badge"></div>
             <div class="phone-main__message"></div>
             <span class="hide">메세지보내기</span>
           </button>
           <button class="phone-main__icon phone-main__icon--music"><span class="hide">음악듣기</span></button>
         </div>
       </div>
+      <basePopup 
+        v-if="popUp"
+        @closeModal= "closeModal"
+        baseTxt="면접전형 안내 메일을 보내겠습니까?"  
+      />
+
     </div>
 
   </div>
@@ -29,11 +36,13 @@
 
 <script>
   import statusBar from '@/components/StatusBar.vue';
+  import basePopup from '@/components/BasePopup.vue';
 
   export default {
     name: 'phoneMain',
     components: {
       statusBar,
+      basePopup,
     },
     props: {
     },
@@ -41,6 +50,7 @@
       return {
         dateCont: '',
         dayCont: '',
+        popUp: false,
       };
     },
     mounted() {
@@ -61,6 +71,12 @@
         this.dayCont = day + '요일';
         this.dateCont = date;
       },
+      isMsg() {
+        this.popUp = true
+      },
+      closeModal() {
+        this.popUp = false
+      }
     },
   }
 
@@ -114,10 +130,28 @@
       background: #fff url(../assets/images/icon_safari.png) center / contain no-repeat;
     }
     &--send {
+      position: relative;
       background-color: #35c235;
     }
     &--music {
-      background: #fb4f67 url(../assets/images/icon_music.svg) center / 70% no-repeat;
+      background: url(../assets/images/icon_music.svg) center / 70% no-repeat, linear-gradient(to bottom, #fb5b73, #fa253d);
+    }
+  }
+  &__badge {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    top: -2rem;
+    right: -2rem;
+    background-color: red;
+    border-radius: 50%;
+    &::before {
+      content: '1';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
     }
   }
   &__message {

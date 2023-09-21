@@ -14,7 +14,7 @@
   }
   &__section--intro {
     #{$this}__cont {
-      margin-top: 10rem;
+      margin-top: 15rem;
     }
   }
   &__cont {
@@ -63,7 +63,6 @@
   &__picture {
     background: url(../image/photo_yena.png) center / cover no-repeat;
   }
-  
   &__emoji, &__picture {
     position: absolute;
     width: 100%; 
@@ -114,7 +113,19 @@
       margin-left: -2.1rem;
     }
   }
-  
+  &__tistory:hover {
+    margin-right: 2rem;
+    > img {
+      transform: scale(1.4);
+    }
+  }
+  &__notion:hover {
+      margin-left: 2rem;
+    > img {
+      transform: scale(1.4);
+    }
+  }
+
   &__informbox {
     display: flex;
     align-items: center;
@@ -153,8 +164,6 @@
     border-bottom: 1px solid;
     margin-left: 0.8rem;
   }
-
-
   // skill page
   .page2 {
     width: 100%;
@@ -203,7 +212,6 @@
     height: 100%;
     animation: bounce 1s linear;
   }
-
   // career page
   .page3 {
     padding-top: 2rem;
@@ -258,13 +266,10 @@
     display: block;
     font-size: 0.9375rem;
   }
-
-
   // career page
   &__section--career {
     position: relative;
   }
-
   // slider
   &__slide {
     display: flex;
@@ -273,7 +278,6 @@
     // cursor: pointer;
     font-size: 40px;
   }
-  
   &__slide-item {
     width: 65%;
     display: flex;
@@ -292,6 +296,7 @@
     width: 100%;
     > img {
       width: 100%;
+      max-height: 600px;
       object-fit: contain;
     }
   }
@@ -324,7 +329,6 @@
       background: url(../image/icon_arrow_right.svg) center / contain no-repeat;
     }
   }
-
   // &__contacticon--phone {
   //   transform-origin: 0% 0%;
   // }
@@ -346,7 +350,6 @@
     0% { border-color: #000; }
     100% { border-color: #fff; }
   }
-
   @keyframes vibration {
     0% {
       transform: rotate(4deg);
@@ -359,7 +362,6 @@
       animation-timing-function: cubic-bezier(1, 0, 0.6, 1.5);
     }
   }
-
   @keyframes bounce {
     0%, 100% {
       transform: translateY(-25%);
@@ -370,18 +372,15 @@
       animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
     }
   }
-
   @keyframes numAni {
-    0%{transform: rotateX(0)}
-    100%{transform: rotateX(90deg)}
+    0% {transform: rotateX(0)}
+    100% {transform: rotateX(90deg)}
   }
     @keyframes numAni2 {
-    0%{transform: rotateX(-90deg)}
-    30%{transform: rotateX(-90deg)}
-    100%{transform: rotateX(0)}
+    0% {transform: rotateX(-90deg)}
+    30% {transform: rotateX(-90deg)}
+    100% {transform: rotateX(0)}
   }
-
-
 
   // 폰트 설정
   font-family: 'Rajdhani';
@@ -392,8 +391,32 @@
     font-family: 'Chosunilbo_myungjo';
   } 
 
+  // 미디어쿼리 
+  @media (max-width: 1160px) {
+    // intro-page
+    &__section--intro {
+      padding: 5rem 0 0 3rem;
+      .portfolio__tit {
+        font-size: 6rem;
+      }
+      .portfolio__master {
+        font-size: 3rem;
+      }
+      .portfolio__titcont {
+        display: inline-flex;
+        flex-direction: column;
+        flex-flow: column-reverse;
+        align-items: baseline;
+        gap: 3rem;
+      }
+      .portfolio__cont {
+        margin-top: 3rem;
+      }
+    }
+  }
 }
 
+// 웹접근성 태그
 .hide {
   overflow: hidden;
   position: absolute;

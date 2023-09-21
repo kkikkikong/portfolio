@@ -59,6 +59,7 @@ export default {
   }
   &__btnbox {
     display: flex;
+    align-items: center;
     gap: 1rem;
     border-top: 1px solid #999;
   }
@@ -75,5 +76,17 @@ export default {
       border-left: 1px solid #999;
     }
   }
+  @media (max-width: 540px) {
+    &__content {
+      width: 50rem;
+    }
+    &__txt {
+      padding: 1rem 3rem 2rem;
+      word-break: keep-all;
+      font-size: 3.3rem;
+      line-height: 4.5rem;
+    }
+  }
+
 }
 </style>

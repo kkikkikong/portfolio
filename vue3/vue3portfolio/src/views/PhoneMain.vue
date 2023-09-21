@@ -86,6 +86,7 @@
 <style lang="scss" scoped>
 .container--opacity {
   position: relative;
+  overflow: hidden;
   &::before {
     content: '';
     display: inline-block;
@@ -93,7 +94,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 143rem;
     background-image: url(@/assets/images/img_phoneback.png);
     background-size: cover;
     opacity: 0.6;
@@ -221,6 +222,30 @@
     }
     100% {
       transform: rotate(3deg);
+    }
+  }
+  
+  @media (max-width: 540px) {
+    &__day {
+      font-size: 2rem;
+    }
+    &__date {
+      font-size: 4rem;
+      line-height: 3.5rem;
+    }
+    &__icon {
+      width: 9rem;
+      height: 9rem;
+    }
+    &__message {
+      width: 7rem;
+      height: 5.5rem;
+    }
+    &__badge {
+      width: 3.5rem;
+      height: 3.5rem;
+      top: -1.5rem;
+      right: -1.5rem;
     }
   }
 }
